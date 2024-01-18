@@ -14,7 +14,7 @@ public class App {
         */
         System.out.println("Conectando ao banco de dados..."); //Exibição de tela, avisando que o banco de daos esta sendo conectado.
         conectar(); //Solicitando o metodo conectar.
-    }
+    } //Encerra metodo main.
 
     /*
      * Declaração do metodo conectar
@@ -40,8 +40,8 @@ public class App {
             status = "Conectado!"; //invocaçao da variavel status para alterar seu valor.
         } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException e)  { //Invocaçao da açao catch. O qual se iniciara a qualquer erro na conexao.
             System.err.println("Erro na conexão: " + e); //Exibição de qualquer erro que de na conexao.
-        }
+        }  //Encerra while.
         System.out.println(status); //Exibição da variavel status.
         return conn; //Retorno da variavel conn com a conexão feita ou não.
-    }
-}
+    } //Encerra metodo conectar.
+}  //Encerra o objeto App.
